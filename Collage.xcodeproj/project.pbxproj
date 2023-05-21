@@ -8,23 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		6438514C2A192584004CAC1C /* CollageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6438514B2A192584004CAC1C /* CollageApp.swift */; };
-		6438514E2A192584004CAC1C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6438514D2A192584004CAC1C /* ContentView.swift */; };
+		6438514E2A192584004CAC1C /* CollageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6438514D2A192584004CAC1C /* CollageView.swift */; };
 		643851502A192585004CAC1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6438514F2A192585004CAC1C /* Assets.xcassets */; };
 		643851532A192585004CAC1C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 643851522A192585004CAC1C /* Preview Assets.xcassets */; };
-		6438515D2A192585004CAC1C /* CollageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6438515C2A192585004CAC1C /* CollageTests.swift */; };
-		643851672A192585004CAC1C /* CollageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643851662A192585004CAC1C /* CollageUITests.swift */; };
-		643851692A192585004CAC1C /* CollageUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643851682A192585004CAC1C /* CollageUITestsLaunchTests.swift */; };
+		6438515D2A192585004CAC1C /* CollageViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6438515C2A192585004CAC1C /* CollageViewModelTests.swift */; };
+		643851782A1A461A004CAC1C /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643851772A1A461A004CAC1C /* GridView.swift */; };
+		6438517C2A1A462F004CAC1C /* GridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6438517B2A1A462F004CAC1C /* GridCell.swift */; };
+		6438517F2A1A4646004CAC1C /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6438517E2A1A4646004CAC1C /* ImageLoader.swift */; };
+		643851822A1A46EB004CAC1C /* CollageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643851812A1A46EB004CAC1C /* CollageViewModel.swift */; };
+		643851852A1A4972004CAC1C /* PixabayEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643851842A1A4972004CAC1C /* PixabayEnum.swift */; };
+		643851872A1A4A77004CAC1C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643851862A1A4A77004CAC1C /* NetworkManager.swift */; };
+		643851892A1A4AA5004CAC1C /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643851882A1A4AA5004CAC1C /* NetworkManagerTests.swift */; };
+		6438518B2A1A4D58004CAC1C /* PixabayApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6438518A2A1A4D58004CAC1C /* PixabayApi.swift */; };
+		6438518F2A1A4DE9004CAC1C /* PixabayResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6438518E2A1A4DE9004CAC1C /* PixabayResponse.swift */; };
+		643851912A1A4E1E004CAC1C /* ImageHit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643851902A1A4E1E004CAC1C /* ImageHit.swift */; };
+		643851932A1A4F13004CAC1C /* ImageLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643851922A1A4F13004CAC1C /* ImageLoaderTests.swift */; };
+		643851962A1A8192004CAC1C /* MockImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643851952A1A8192004CAC1C /* MockImageLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		643851592A192585004CAC1C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 643851402A192584004CAC1C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 643851472A192584004CAC1C;
-			remoteInfo = Collage;
-		};
-		643851632A192585004CAC1C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 643851402A192584004CAC1C /* Project object */;
 			proxyType = 1;
@@ -36,14 +39,23 @@
 /* Begin PBXFileReference section */
 		643851482A192584004CAC1C /* Collage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Collage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6438514B2A192584004CAC1C /* CollageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollageApp.swift; sourceTree = "<group>"; };
-		6438514D2A192584004CAC1C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6438514D2A192584004CAC1C /* CollageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollageView.swift; sourceTree = "<group>"; };
 		6438514F2A192585004CAC1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		643851522A192585004CAC1C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		643851582A192585004CAC1C /* CollageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6438515C2A192585004CAC1C /* CollageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollageTests.swift; sourceTree = "<group>"; };
-		643851622A192585004CAC1C /* CollageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		643851662A192585004CAC1C /* CollageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollageUITests.swift; sourceTree = "<group>"; };
-		643851682A192585004CAC1C /* CollageUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollageUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6438515C2A192585004CAC1C /* CollageViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollageViewModelTests.swift; sourceTree = "<group>"; };
+		643851772A1A461A004CAC1C /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		6438517B2A1A462F004CAC1C /* GridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCell.swift; sourceTree = "<group>"; };
+		6438517E2A1A4646004CAC1C /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		643851812A1A46EB004CAC1C /* CollageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollageViewModel.swift; sourceTree = "<group>"; };
+		643851842A1A4972004CAC1C /* PixabayEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixabayEnum.swift; sourceTree = "<group>"; };
+		643851862A1A4A77004CAC1C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		643851882A1A4AA5004CAC1C /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
+		6438518A2A1A4D58004CAC1C /* PixabayApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixabayApi.swift; sourceTree = "<group>"; };
+		6438518E2A1A4DE9004CAC1C /* PixabayResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixabayResponse.swift; sourceTree = "<group>"; };
+		643851902A1A4E1E004CAC1C /* ImageHit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHit.swift; sourceTree = "<group>"; };
+		643851922A1A4F13004CAC1C /* ImageLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderTests.swift; sourceTree = "<group>"; };
+		643851952A1A8192004CAC1C /* MockImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockImageLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,13 +73,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6438515F2A192585004CAC1C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -76,7 +81,6 @@
 			children = (
 				6438514A2A192584004CAC1C /* Collage */,
 				6438515B2A192585004CAC1C /* CollageTests */,
-				643851652A192585004CAC1C /* CollageUITests */,
 				643851492A192584004CAC1C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,7 +90,6 @@
 			children = (
 				643851482A192584004CAC1C /* Collage.app */,
 				643851582A192585004CAC1C /* CollageTests.xctest */,
-				643851622A192585004CAC1C /* CollageUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,8 +97,12 @@
 		6438514A2A192584004CAC1C /* Collage */ = {
 			isa = PBXGroup;
 			children = (
-				6438514B2A192584004CAC1C /* CollageApp.swift */,
-				6438514D2A192584004CAC1C /* ContentView.swift */,
+				6438518C2A1A4DD2004CAC1C /* Models */,
+				643851832A1A4964004CAC1C /* Constants */,
+				643851802A1A4658004CAC1C /* App */,
+				6438517D2A1A4637004CAC1C /* Subsystem */,
+				643851762A1A460A004CAC1C /* Views */,
+				643851752A1A4601004CAC1C /* ViewModel */,
 				6438514F2A192585004CAC1C /* Assets.xcassets */,
 				643851512A192585004CAC1C /* Preview Content */,
 			);
@@ -113,18 +120,73 @@
 		6438515B2A192585004CAC1C /* CollageTests */ = {
 			isa = PBXGroup;
 			children = (
-				6438515C2A192585004CAC1C /* CollageTests.swift */,
+				643851942A1A8187004CAC1C /* Mocks */,
+				6438515C2A192585004CAC1C /* CollageViewModelTests.swift */,
+				643851882A1A4AA5004CAC1C /* NetworkManagerTests.swift */,
+				643851922A1A4F13004CAC1C /* ImageLoaderTests.swift */,
 			);
 			path = CollageTests;
 			sourceTree = "<group>";
 		};
-		643851652A192585004CAC1C /* CollageUITests */ = {
+		643851752A1A4601004CAC1C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				643851662A192585004CAC1C /* CollageUITests.swift */,
-				643851682A192585004CAC1C /* CollageUITestsLaunchTests.swift */,
+				643851812A1A46EB004CAC1C /* CollageViewModel.swift */,
 			);
-			path = CollageUITests;
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		643851762A1A460A004CAC1C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6438514D2A192584004CAC1C /* CollageView.swift */,
+				643851772A1A461A004CAC1C /* GridView.swift */,
+				6438517B2A1A462F004CAC1C /* GridCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6438517D2A1A4637004CAC1C /* Subsystem */ = {
+			isa = PBXGroup;
+			children = (
+				6438517E2A1A4646004CAC1C /* ImageLoader.swift */,
+				643851862A1A4A77004CAC1C /* NetworkManager.swift */,
+			);
+			path = Subsystem;
+			sourceTree = "<group>";
+		};
+		643851802A1A4658004CAC1C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6438514B2A192584004CAC1C /* CollageApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		643851832A1A4964004CAC1C /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				643851842A1A4972004CAC1C /* PixabayEnum.swift */,
+				6438518A2A1A4D58004CAC1C /* PixabayApi.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		6438518C2A1A4DD2004CAC1C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6438518E2A1A4DE9004CAC1C /* PixabayResponse.swift */,
+				643851902A1A4E1E004CAC1C /* ImageHit.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		643851942A1A8187004CAC1C /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				643851952A1A8192004CAC1C /* MockImageLoader.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,24 +227,6 @@
 			productReference = 643851582A192585004CAC1C /* CollageTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		643851612A192585004CAC1C /* CollageUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 643851722A192585004CAC1C /* Build configuration list for PBXNativeTarget "CollageUITests" */;
-			buildPhases = (
-				6438515E2A192585004CAC1C /* Sources */,
-				6438515F2A192585004CAC1C /* Frameworks */,
-				643851602A192585004CAC1C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				643851642A192585004CAC1C /* PBXTargetDependency */,
-			);
-			name = CollageUITests;
-			productName = CollageUITests;
-			productReference = 643851622A192585004CAC1C /* CollageUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +241,6 @@
 						CreatedOnToolsVersion = 14.3;
 					};
 					643851572A192585004CAC1C = {
-						CreatedOnToolsVersion = 14.3;
-						TestTargetID = 643851472A192584004CAC1C;
-					};
-					643851612A192585004CAC1C = {
 						CreatedOnToolsVersion = 14.3;
 						TestTargetID = 643851472A192584004CAC1C;
 					};
@@ -221,7 +261,6 @@
 			targets = (
 				643851472A192584004CAC1C /* Collage */,
 				643851572A192585004CAC1C /* CollageTests */,
-				643851612A192585004CAC1C /* CollageUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -243,13 +282,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		643851602A192585004CAC1C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -257,8 +289,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6438514E2A192584004CAC1C /* ContentView.swift in Sources */,
+				6438518B2A1A4D58004CAC1C /* PixabayApi.swift in Sources */,
+				643851912A1A4E1E004CAC1C /* ImageHit.swift in Sources */,
+				643851822A1A46EB004CAC1C /* CollageViewModel.swift in Sources */,
+				6438514E2A192584004CAC1C /* CollageView.swift in Sources */,
+				643851782A1A461A004CAC1C /* GridView.swift in Sources */,
+				6438517F2A1A4646004CAC1C /* ImageLoader.swift in Sources */,
+				6438518F2A1A4DE9004CAC1C /* PixabayResponse.swift in Sources */,
+				643851872A1A4A77004CAC1C /* NetworkManager.swift in Sources */,
 				6438514C2A192584004CAC1C /* CollageApp.swift in Sources */,
+				6438517C2A1A462F004CAC1C /* GridCell.swift in Sources */,
+				643851852A1A4972004CAC1C /* PixabayEnum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,16 +307,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6438515D2A192585004CAC1C /* CollageTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6438515E2A192585004CAC1C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				643851692A192585004CAC1C /* CollageUITestsLaunchTests.swift in Sources */,
-				643851672A192585004CAC1C /* CollageUITests.swift in Sources */,
+				643851962A1A8192004CAC1C /* MockImageLoader.swift in Sources */,
+				643851892A1A4AA5004CAC1C /* NetworkManagerTests.swift in Sources */,
+				6438515D2A192585004CAC1C /* CollageViewModelTests.swift in Sources */,
+				643851932A1A4F13004CAC1C /* ImageLoaderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,11 +321,6 @@
 			isa = PBXTargetDependency;
 			target = 643851472A192584004CAC1C /* Collage */;
 			targetProxy = 643851592A192585004CAC1C /* PBXContainerItemProxy */;
-		};
-		643851642A192585004CAC1C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 643851472A192584004CAC1C /* Collage */;
-			targetProxy = 643851632A192585004CAC1C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -507,42 +537,6 @@
 			};
 			name = Release;
 		};
-		643851732A192585004CAC1C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FHN8RU94TU;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = swiftui.elements.com.CollageUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Collage;
-			};
-			name = Debug;
-		};
-		643851742A192585004CAC1C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FHN8RU94TU;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = swiftui.elements.com.CollageUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Collage;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -569,15 +563,6 @@
 			buildConfigurations = (
 				643851702A192585004CAC1C /* Debug */,
 				643851712A192585004CAC1C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		643851722A192585004CAC1C /* Build configuration list for PBXNativeTarget "CollageUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				643851732A192585004CAC1C /* Debug */,
-				643851742A192585004CAC1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
