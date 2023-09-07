@@ -14,6 +14,7 @@
 		27EA55C12AAA347D00BA757D /* ImageLoaderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EA55C02AAA347D00BA757D /* ImageLoaderMock.swift */; };
 		27F479D62AAA42D800DDD4BF /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F479D52AAA42D800DDD4BF /* NetworkMonitor.swift */; };
 		27F479D82AAA440000DDD4BF /* NetworkMonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F479D72AAA440000DDD4BF /* NetworkMonitorTests.swift */; };
+		27F479DA2AAA489D00DDD4BF /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F479D92AAA489D00DDD4BF /* MockNetworkManager.swift */; };
 		6438514C2A192584004CAC1C /* CollageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6438514B2A192584004CAC1C /* CollageApp.swift */; };
 		6438514E2A192584004CAC1C /* CollageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6438514D2A192584004CAC1C /* CollageView.swift */; };
 		643851502A192585004CAC1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6438514F2A192585004CAC1C /* Assets.xcassets */; };
@@ -58,6 +59,7 @@
 		27EA55C02AAA347D00BA757D /* ImageLoaderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderMock.swift; sourceTree = "<group>"; };
 		27F479D52AAA42D800DDD4BF /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		27F479D72AAA440000DDD4BF /* NetworkMonitorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitorTests.swift; sourceTree = "<group>"; };
+		27F479D92AAA489D00DDD4BF /* MockNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
 		643851482A192584004CAC1C /* Collage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Collage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6438514B2A192584004CAC1C /* CollageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollageApp.swift; sourceTree = "<group>"; };
 		6438514D2A192584004CAC1C /* CollageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollageView.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				27EA55BD2AAA2EDC00BA757D /* hitsList.json */,
 				27EA55BB2AAA2EAB00BA757D /* NetworkManagerMock.swift */,
 				27EA55C02AAA347D00BA757D /* ImageLoaderMock.swift */,
+				27F479D92AAA489D00DDD4BF /* MockNetworkManager.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 			files = (
 				6438518B2A1A4D58004CAC1C /* PixabayApi.swift in Sources */,
 				643851912A1A4E1E004CAC1C /* ImageHit.swift in Sources */,
+				27F479DA2AAA489D00DDD4BF /* MockNetworkManager.swift in Sources */,
 				643851822A1A46EB004CAC1C /* CollageViewModel.swift in Sources */,
 				6438514E2A192584004CAC1C /* CollageView.swift in Sources */,
 				643851782A1A461A004CAC1C /* GridView.swift in Sources */,

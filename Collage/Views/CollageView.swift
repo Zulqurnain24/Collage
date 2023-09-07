@@ -12,12 +12,11 @@ import SwiftUI
 struct CollageView: View {
     
     @ObservedObject var viewModel: CollageViewModel
-    @ObservedObject var networkMonitor: NetworkMonitor
     
     var body: some View {
         NavigationView {
             
-            switch networkMonitor.isConnected && networkMonitor.isMonitoring {
+            switch viewModel.isConnected() && viewModel.isMonitoring() {
             case true:
                 VStack(alignment: .leading) {
                     if $viewModel.imageLoaders.isEmpty {
@@ -38,7 +37,6 @@ struct CollageView: View {
             case false:
                 Text("Please connect to internet then try again")
             }
-            
         }
     }
 }

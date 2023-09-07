@@ -8,13 +8,16 @@
 import Foundation
 import Network
 
-protocol NetworkMonitorDegelate: ObservableObject {
+protocol NetworkMonitorDegelate {
+    var isConnected: Bool { get set }
+    var isMonitoring: Bool { get set }
     func startMonitoring()
     func stopMonitoring()
 }
 
 class NetworkMonitor: NetworkMonitorDegelate {
     private let monitor = NWPathMonitor()
+    
     var isMonitoring = false
     
     @Published var isConnected = true

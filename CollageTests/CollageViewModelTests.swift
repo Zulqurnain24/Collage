@@ -15,12 +15,17 @@ class CollageViewModelTests: XCTestCase {
     override func setUp() {
         super.setUp()
         sut = CollageViewModel(imageLoaders: [],
-                               networkManager: NetworkManagerMock())
+                               networkManager: NetworkManagerMock(), networkMonitor: MockNetworkMonitor())
     }
     
     override func tearDown() {
         sut = nil
         super.tearDown()
+    }
+    
+    func testWhenLoadDataIsCalled_ThenMockNetworkMonitorStartsMonitoringAndShowsConnectedWhenInternetIsPresent() {
+        XCTAssertFalse(sut?.isMonitoring() ?? false)
+        XCTAssertTrue(sut?.isConnected() ?? false)
     }
     
     func testWhenLoadDataIsCalled_ThenImageLoadersGetsPopulated() {
