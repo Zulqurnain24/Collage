@@ -7,7 +7,11 @@
 
 import Foundation
 
-class NetworkManager {
+protocol NetworkManagerDelegate {
+    func performRequest<T: Decodable>(url: URL, completion: @escaping (Result<T, Error>) -> Void)
+}
+
+class NetworkManager: NetworkManagerDelegate {
     func performRequest<T: Decodable>(url: URL, completion: @escaping (Result<T, Error>) -> Void) {
         URLSession.shared.dataTask(with: url) { data, response, error in
             if let error = error {
@@ -21,7 +25,7 @@ class NetworkManager {
                 return
             }
             
-            guard 200..<300 ~= httpResponse.statusCode else {
+            guard Constants.okStatusRequestCode..<Constants.multipleChoicesRequestCode ~= httpResponse.statusCode else {
                 let error = NSError(domain: "HTTPError", code: httpResponse.statusCode, userInfo: nil)
                 completion(.failure(error))
                 return

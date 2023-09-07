@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-protocol CollageViewModelProtocol: ObservableObject {
+protocol CollageViewModelDelegate: ObservableObject {
   func loadData(completionHandler: (() -> Void)?)
 }
 
-class CollageViewModel: CollageViewModelProtocol {
-  private let networkManager: NetworkManager
-  @Published var imageLoaders: [ImageLoader] = [] {
+class CollageViewModel: CollageViewModelDelegate {
+  private let networkManager: NetworkManagerDelegate
+    @Published var imageLoaders: [any ImageLoaderDelegate] = [] {
     didSet {
       self.imageLoaders.forEach { imageLoader in
         imageLoader.prefetchImage()
@@ -21,8 +21,8 @@ class CollageViewModel: CollageViewModelProtocol {
     }
   }
 
-  init(imageLoaders: [ImageLoader],
-       networkManager: NetworkManager) {
+    init(imageLoaders: [any ImageLoaderDelegate],
+       networkManager: NetworkManagerDelegate) {
     self.imageLoaders = imageLoaders
     self.networkManager = networkManager
   }
@@ -40,12 +40,12 @@ class CollageViewModel: CollageViewModelProtocol {
       switch result {
       case .success(let response):
         DispatchQueue.main.async {
-          self.imageLoaders = response.hits.map { ImageLoader(imageURL: $0.largeImageURL ) }
+            self.imageLoaders = response.hits.map { ImageLoader(imageURL: $0.previewURL ) }
           completionHandler?()
         }
-        
+          
       case .failure(let error):
-        print("API Request failed with error: \(error.localizedDescription)")
+          print("\(Constants.apiRequestFailed) \(error.localizedDescription)")
         completionHandler?()
       }
     }

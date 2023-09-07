@@ -21,11 +21,12 @@ struct GridCell: View {
           Image(uiImage: image)
             .resizable()
             .aspectRatio(contentMode: .fill)
-            .frame(width: 100, height: 100)
+            .frame(width: Constants.imageDimension, height: Constants.imageDimension)
+            .cornerRadius(Constants.cornerRadius)
         } else {
           // Placeholder or loading view
           Color.gray
-            .frame(width: 100, height: 100)
+            .frame(width: Constants.imageDimension, height: Constants.imageDimension)
         }
       }
     }

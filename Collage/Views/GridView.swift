@@ -16,7 +16,7 @@ struct GridView: View {
   
   var body: some View {
     ScrollView {
-      LazyVGrid(columns: [GridItem(.adaptive(minimum: 150))], spacing: 16) {
+        LazyVGrid(columns: [GridItem(.adaptive(minimum: Constants.gridMinimumDimension))], spacing: Constants.spacing) {
         ForEach(imageLoaders, id: \.self) { imageLoader in
           GridCell(imageLoader: imageLoader)
         }
