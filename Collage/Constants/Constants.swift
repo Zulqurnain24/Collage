@@ -16,4 +16,5 @@ enum Constants {
     static let multipleChoicesRequestCode = 300
     static let navigationTitle = "~Pixabay Collage~"
     static let apiRequestFailed = "API Request failed with error:"
+    static let offlineModeMessage = "Please connect to internet then try again"
 }

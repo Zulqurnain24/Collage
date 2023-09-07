@@ -8,5 +8,5 @@
 import Foundation
 
 struct PixabayResponse: Decodable {
-  let hits: [ImageHit]
+    let hits: [ImageHit]
 }

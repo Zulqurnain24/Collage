@@ -8,5 +8,5 @@
 import Foundation
 
 struct ImageHit: Decodable {
-  let previewURL: String
+    let previewURL: String
 }

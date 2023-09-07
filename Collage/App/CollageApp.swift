@@ -9,9 +9,9 @@ import SwiftUI
 
 @main
 struct CollageApp: App {
-  var body: some Scene {
-    WindowGroup {
-      CollageView(viewModel: CollageViewModel(imageLoaders: [], networkManager: NetworkManager(), networkMonitor: NetworkMonitor()))
+    var body: some Scene {
+        WindowGroup {
+            CollageView(viewModel: CollageViewModel(imageLoaders: [], networkManager: NetworkManager(), networkMonitor: NetworkMonitor()))
+        }
     }
-  }
 }

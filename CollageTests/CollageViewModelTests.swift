@@ -15,7 +15,7 @@ class CollageViewModelTests: XCTestCase {
     override func setUp() {
         super.setUp()
         sut = CollageViewModel(imageLoaders: [],
-                               networkManager: NetworkManagerMock(), networkMonitor: MockNetworkMonitor())
+                               networkManager: NetworkManagerMock(), networkMonitor: NetworkMonitorMock())
     }
     
     override func tearDown() {
@@ -30,7 +30,7 @@ class CollageViewModelTests: XCTestCase {
     
     func testWhenLoadDataIsCalled_ThenImageLoadersGetsPopulated() {
         let expectation = XCTestExpectation(description: "Data loaded")
-      
+        
         sut?.loadData {
             if let imageLoaders = self.sut?.imageLoaders {
                 XCTAssertTrue(!imageLoaders.isEmpty)
@@ -49,7 +49,7 @@ class CollageViewModelTests: XCTestCase {
         
         // Call the prefetchImages method
         sut?.prefetchImages()
-     
+        
         XCTAssertTrue(imageLoader1.isPrefetchImageCalled)
         XCTAssertTrue(imageLoader2.isPrefetchImageCalled)
     }

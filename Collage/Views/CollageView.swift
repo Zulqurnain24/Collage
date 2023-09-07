@@ -35,7 +35,7 @@ struct CollageView: View {
                     viewModel.prefetchImages()
                 }
             case false:
-                Text("Please connect to internet then try again")
+                Text(Constants.offlineModeMessage)
             }
         }
     }

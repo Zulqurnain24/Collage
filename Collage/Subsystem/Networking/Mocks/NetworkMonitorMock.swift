@@ -7,7 +7,7 @@
 
 import Foundation
 
-class MockNetworkMonitor: NetworkMonitorDegelate {
+class NetworkMonitorMock: NetworkMonitorDegelate {
     var isConnected: Bool = true
     
     var isMonitoring: Bool = false

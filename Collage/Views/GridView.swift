@@ -8,20 +8,20 @@
 import SwiftUI
 
 struct GridView: View {
-  let imageLoaders: [ImageLoader]
-  
-  init(imageLoaders: [ImageLoader]) {
-    self.imageLoaders = imageLoaders
-  }
-  
-  var body: some View {
-    ScrollView {
-        LazyVGrid(columns: [GridItem(.adaptive(minimum: Constants.gridMinimumDimension))], spacing: Constants.spacing) {
-        ForEach(imageLoaders, id: \.self) { imageLoader in
-          GridCell(imageLoader: imageLoader)
-        }
-      }
-      .padding()
+    let imageLoaders: [ImageLoader]
+    
+    init(imageLoaders: [ImageLoader]) {
+        self.imageLoaders = imageLoaders
     }
-  }
+    
+    var body: some View {
+        ScrollView {
+            LazyVGrid(columns: [GridItem(.adaptive(minimum: Constants.gridMinimumDimension))], spacing: Constants.spacing) {
+                ForEach(imageLoaders, id: \.self) { imageLoader in
+                    GridCell(imageLoader: imageLoader)
+                }
+            }
+            .padding()
+        }
+    }
 }

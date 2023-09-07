@@ -13,4 +13,5 @@ enum PixabayAPI {
     static let query = "nature"
     static let imageType = "photo"
     static let perPage = "200"
+    static let apiURLString = "\(PixabayAPI.baseURL)?key=\(PixabayAPI.key)&q=\(PixabayAPI.query)&image_type=\(PixabayAPI.imageType)&per_page=\(PixabayAPI.perPage)"
 }

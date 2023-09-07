@@ -41,7 +41,7 @@ class CollageViewModel: CollageViewModelDelegate {
     }
     
     func loadData(completionHandler: (() -> Void)? = nil) {
-        guard let url = URL(string: PixabayApi.apiURLString) else { return }
+        guard let url = URL(string: PixabayAPI.apiURLString) else { return }
         
         networkManager.performRequest(url: url) { (result: Result<PixabayResponse, Error>) in
             switch result {
